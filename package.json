@@ -6,6 +6,7 @@
   "scripts": {
     "start": " node index.js",
     "scripts:watch": "babel src --watch --source-map-inline --out-dir dist"
+    "build":"npm i"
   },
   "author": "",
   "license": "ISC",
