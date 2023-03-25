@@ -21,7 +21,6 @@ app.get("/decks", async (req, res) => {
 // POST REQ
 app.post("/decks", create);
 
-const port = process.env.PORT || 5000
 
 const url = process.env.MONGO_DB_URL;
 const port = process.env.PORT || 5000
