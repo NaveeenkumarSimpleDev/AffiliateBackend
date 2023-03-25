@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": " nodemon index.js",
+    "start": " node index.js",
     "scripts:watch": "babel src --watch --source-map-inline --out-dir dist"
   },
   "author": "",
