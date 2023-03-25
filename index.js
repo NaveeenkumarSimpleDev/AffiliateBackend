@@ -24,6 +24,7 @@ app.post("/decks", create);
 const port = process.env.PORT || 5000
 
 const url = process.env.MONGO_DB_URL;
+const port = process.env.PORT || 5000
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {

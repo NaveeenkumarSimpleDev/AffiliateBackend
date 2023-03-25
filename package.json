@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": " node index.js",
-    "build":"npm i",
     "scripts:watch": "babel src --watch --source-map-inline --out-dir dist"
   },
   "author": "",
