@@ -11,8 +11,6 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static("./public"));
-app.use(bodyParser.json());
 
 // GET REQ
 app.get("/decks", async (req, res) => {
@@ -24,8 +22,9 @@ app.get("/decks", async (req, res) => {
 app.post("/decks", create);
 
 const url = process.env.MONGO_DB_URL;
+const port = process.env.PORT || 5000
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    app.listen(5000, () => console.log("SERVER STARTED"));
+    app.listen(port, () => console.log("SERVER STARTED"));
   });
