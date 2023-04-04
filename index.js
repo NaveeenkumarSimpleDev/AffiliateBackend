@@ -19,7 +19,7 @@ app.get("/decks", async (req, res) => {
 });
 
 // POST REQ
-app.post("/decks", create);
+app.post("/", create);
 
 
 const url = process.env.MONGO_DB_URL;
